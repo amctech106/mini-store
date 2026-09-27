@@ -1,24 +1,52 @@
-let products = [
-  { id: 1, name: "T-Shirt", price: 25, color: "black", inStock: true },
-  { id: 2, name: "Smart Watch", price: 200, color: "Golden", inStock: true },
-  { id: 3, name: "Headphones", price: 80, color: "white", inStock: false },
-  { id: 4, name: "Laptop", price: 650, color: "black", inStock: true },
-  { id: 5, name: "Water Bottle", price: 150, color: "Blue", inStock: true },
+const products = [
+  {
+    name: "iPhone 15",
+    price: 180000,
+    category: "mobile",
+    inStock: true,
+  },
+  {
+    name: "Samsung Galaxy S24",
+    price: 220000,
+    category: "mobile",
+    inStock: true,
+  },
+  {
+    name: "HP Laptop",
+    price: 150000,
+    category: "laptop",
+    inStock: false,
+  },
+  {
+    name: "Dell Laptop",
+    price: 120000,
+    category: "laptop",
+    inStock: true,
+  },
+  {
+    name: "AirPods",
+    price: 45000,
+    category: "accessories",
+    inStock: true,
+  },
+  {
+    name: "Gaming Mouse",
+    price: 8000,
+    category: "accessories",
+    inStock: false,
+  },
 ];
 
-for(let i =0; i < products.length; i ++){
-  console.log(products[i])
-}
+// let cart = []
 
-let num = Number(prompt("choose a product by an id"))
+let search = prompt("Search here ")
 
-let cart = [];
+ let result = products
+.filter((product)=>product.name.toLowerCase().includes(search.toLowerCase()))
+.map((product)=> product.name)
 
-for(let i =0; i <products.length; i ++){
-  if(products[i]=== id && products[i] === true){
-    cart.push(products[i])
-   
-  }
-}
 
-console.log(cart)
+
+// console.log(cart)
+
+console.log(result)
