@@ -45,8 +45,12 @@ let search = prompt("Search here ")
 .filter((product)=>product.name.toLowerCase().includes(search.toLowerCase()))
 .map((product)=> product.name)
 
+console.log(result)
 
+// if(!result){
+//   console.log("product not found")
+// }
 
 // console.log(cart)
 
-console.log(result)
+
