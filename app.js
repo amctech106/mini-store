@@ -43,7 +43,7 @@ let search = prompt("Search here ")
 
  let result = products
 .filter((product)=>product.name.toLowerCase().includes(search.toLowerCase()))
-.map((product)=> product.name)
+.map((product)=> `Name: ${product.name}`)
 
 console.log(result)
 
