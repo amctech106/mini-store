@@ -39,13 +39,13 @@ const products = [
 
 // // let cart = []
 
-// let search = prompt("Search here ")
+let search = prompt("Search here ")
 
-//  let result = products
-// .filter((product)=>product.name.toLowerCase().includes(search.toLowerCase()))
-// .map((product)=> product.name)
+ let result = products
+.filter((product)=>product.name.toLowerCase().includes(search.toLowerCase()))
+.map((product)=> product.name)
 
-// console.log(result)
+console.log(result)
 
 // // if(!result){
 // //   console.log("product not found")
